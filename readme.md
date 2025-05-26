@@ -142,3 +142,38 @@ This will run some additional validations on your submission and check that it i
 ```
 token-metadata-creator entry d4fece6b39f7cd78a3f036b2ae6508c13524b863922da80f68dd9ab75553444d --finalize
 ```
+
+## Fork Cardano token registry and clone it locally and add subject
+
+### 1. How to submit an entry to the registry
+
+#### Step 1: Fork and clone the registry repository
+
+Fork your own copy of cardano-foundation/cardano-token-registry to your account.
+
+Then clone a local copy:
+
+```
+git clone git@github.com:<your-github-username>/cardano-token-registry
+cd cardano-token-registry
+```
+
+#### Step 2: Add your metadata entry to the 'registry' folder
+
+```
+cp d4fece6b39f7cd78a3f036b2ae6508c13524b863922da80f68dd9ab75553444d.json registry/
+```
+
+#### Step 3: Create a commit for the submission
+
+```
+$ git add registry/d4fece6b39f7cd78a3f036b2ae6508c13524b863922da80f68dd9ab75553444d.json
+$ git commit -m "USDM"
+$ git push
+```
+
+#### Step 4: Make a Pull Request
+
+Create a pull request from your fork.
+
+If the pull request validations pass, your submission will be reviewed and merged to the main branch subject to the Registry Terms of Use. It may take a few hours following a merge to the main branch before your entry is added to the database and available via the api query.
