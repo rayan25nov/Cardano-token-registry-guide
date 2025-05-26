@@ -149,13 +149,13 @@ token-metadata-creator entry d4fece6b39f7cd78a3f036b2ae6508c13524b863922da80f68d
 
 #### Step 1: Fork and clone the registry repository
 
-Fork your own copy of cardano-foundation/cardano-token-registry to your account.
+Fork your own copy of input-output-hk/metadata-registry-testnet[https://github.com/input-output-hk/metadata-registry-testnet] to your account.
 
 Then clone a local copy:
 
 ```
-git clone git@github.com:<your-github-username>/cardano-token-registry
-cd cardano-token-registry
+git clone git@github.com:<your-github-username>/metadata-registry-testnet
+cd metadata-registry-testnet
 ```
 
 #### Step 2: Add your metadata entry to the 'registry' folder
